@@ -1,0 +1,453 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <artifactId>SeleniumJavaTestNGFramework</artifactId>
+
+    <dependencies>
+        <!--
+        https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
+        <dependency>
+            <artifactId>selenium-java</artifactId>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <version>4.8.1</version>
+        </dependency>
+        <dependency>
+            <artifactId>org.apache.commons.io</artifactId>
+            <groupId>org.apache.directory.studio</groupId>
+            <version>2.4</version>
+        </dependency>
+        <dependency>
+            <artifactId>javax.mail-api</artifactId>
+            <groupId>javax.mail</groupId>
+            <version>1.6.2</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.apache.commons/commons-email -->
+        <dependency>
+            <artifactId>commons-email</artifactId>
+            <groupId>org.apache.commons</groupId>
+            <version>1.5</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-java -->
+        <dependency>
+            <artifactId>cucumber-java</artifactId>
+            <groupId>io.cucumber</groupId>
+            <version>7.14.0</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-testng -->
+        <dependency>
+            <artifactId>cucumber-testng</artifactId>
+            <groupId>io.cucumber</groupId>
+            <version>7.14.0</version>
+        </dependency>
+        <!--
+        https://mvnrepository.com/artifact/io.cucumber/cucumber-picocontainer -->
+        <dependency>
+            <artifactId>cucumber-picocontainer</artifactId>
+            <groupId>io.cucumber</groupId>
+            <version>7.14.0</version>
+        </dependency>
+        <dependency>
+            <artifactId>extentreports</artifactId>
+            <groupId>com.aventstack</groupId>
+            <version>5.0.9</version>
+        </dependency>
+        <dependency>
+            <artifactId>webdrivermanager</artifactId>
+            <groupId>io.github.bonigarcia</groupId>
+            <version>5.5.3</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.testng/testng -->
+        <dependency>
+            <groupId>org.testng</groupId>
+            <artifactId>testng</artifactId>
+            <version>7.8.0</version>
+            <scope>test</scope>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind -->
+        <dependency>
+            <artifactId>jackson-databind</artifactId>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <version>2.16.0</version>
+        </dependency>
+        <dependency>
+            <artifactId>log4j</artifactId>
+            <groupId>log4j</groupId>
+            <version>1.2.17</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-core -->
+        <dependency>
+            <artifactId>log4j-core</artifactId>
+            <groupId>org.apache.logging.log4j</groupId>
+            <version>2.22.0</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.apache.commons/commons-lang3 -->
+        <dependency>
+            <artifactId>commons-lang3</artifactId>
+            <groupId>org.apache.commons</groupId>
+            <version>3.12.0</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
+        <dependency>
+            <artifactId>mysql-connector-java</artifactId>
+            <groupId>mysql</groupId>
+            <version>8.0.33</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/com.beust/jcommander -->
+        <dependency>
+            <artifactId>jcommander</artifactId>
+            <groupId>com.beust</groupId>
+            <version>1.82</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/commons-io/commons-io -->
+        <dependency>
+            <artifactId>commons-io</artifactId>
+            <groupId>commons-io</groupId>
+            <version>2.13.0</version>
+        </dependency>
+        <dependency>
+            <artifactId>poi</artifactId>
+            <groupId>org.apache.poi</groupId>
+            <version>4.1.2</version>
+        </dependency>
+        <dependency>
+            <artifactId>poi-ooxml</artifactId>
+            <groupId>org.apache.poi</groupId>
+            <version>4.1.2</version>
+        </dependency>
+        <!--https://mvnrepository.com/artifact/org.seleniumhq.selenium/htmlunit-driver -->
+        <dependency>
+            <artifactId>htmlunit-driver</artifactId>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <version>4.10.0</version>
+        </dependency>
+        <dependency>
+            <artifactId>paradox_2.10</artifactId>
+            <groupId>com.lightbend.paradox</groupId>
+            <version>0.5.3</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.mockito/mockito-core -->
+        <dependency>
+            <artifactId>mockito-core</artifactId>
+            <groupId>org.mockito</groupId>
+            <scope>test</scope>
+            <version>5.7.0</version>
+        </dependency>
+        <dependency>
+            <artifactId>snakeyaml</artifactId>
+            <groupId>org.yaml</groupId>
+            <version>2.0</version>
+        </dependency>
+        <dependency>
+            <artifactId>wiremock</artifactId>
+            <groupId>com.github.tomakehurst</groupId>
+            <scope>test</scope>
+            <version>2.27.2</version>
+        </dependency>
+        <dependency>
+            <artifactId>guava</artifactId>
+            <groupId>com.google.guava</groupId>
+            <version>31.1-jre</version>
+        </dependency>
+        <dependency>
+            <artifactId>pdfbox</artifactId>
+            <groupId>org.apache.pdfbox</groupId>
+            <version>2.0.27</version>
+        </dependency>
+        <dependency>
+            <artifactId>pdf-util</artifactId>
+            <groupId>com.testautomationguru.pdfutil</groupId>
+            <version>0.0.3</version>
+        </dependency>
+        <dependency>
+            <artifactId>awaitility</artifactId>
+            <groupId>org.awaitility</groupId>
+            <version>4.2.0</version>
+        </dependency>
+        <dependency>
+            <artifactId>csv-comparator</artifactId>
+            <groupId>com.github.ngoanh2n</groupId>
+            <scope>compile</scope>
+            <version>1.5.0</version>
+        </dependency>
+        <dependency>
+            <artifactId>javafaker</artifactId>
+            <groupId>com.github.javafaker</groupId>
+            <version>1.0.2</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/info.cukes/gherkin -->
+        <dependency>
+            <artifactId>gherkin</artifactId>
+            <groupId>info.cukes</groupId>
+            <scope>provided</scope>
+            <version>2.12.2</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.json/json -->
+        <dependency>
+            <artifactId>json</artifactId>
+            <groupId>org.json</groupId>
+            <version>20231013</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/io.rest-assured/rest-assured -->
+        <dependency>
+            <artifactId>rest-assured</artifactId>
+            <groupId>io.rest-assured</groupId>
+            <scope>compile</scope>
+            <version>5.3.2</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/io.rest-assured/json-path -->
+        <dependency>
+            <artifactId>json-path</artifactId>
+            <groupId>io.rest-assured</groupId>
+            <scope>test</scope>
+            <version>5.3.2</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/io.rest-assured/xml-path -->
+        <dependency>
+            <artifactId>xml-path</artifactId>
+            <groupId>io.rest-assured</groupId>
+            <version>5.3.2</version>
+        </dependency>
+        <!--https://mvnrepository.com/artifact/io.rest-assured/json-schema-validator -->
+        <dependency>
+            <artifactId>json-schema-validator</artifactId>
+            <groupId>io.rest-assured</groupId>
+            <version>5.3.2</version>
+        </dependency>
+        <!-- Dependecy to make the Firefox work with Maven -->
+        <dependency>
+            <artifactId>xml-apis</artifactId>
+            <groupId>xml-apis</groupId>
+            <version>1.0.b2</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.apache.xmlbeans/xmlbeans -->
+        <dependency>
+            <artifactId>xmlbeans</artifactId>
+            <groupId>org.apache.xmlbeans</groupId>
+            <version>5.0.3</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/dom4j/dom4j -->
+        <dependency>
+            <artifactId>dom4j</artifactId>
+            <groupId>dom4j</groupId>
+            <version>1.6.1</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/com.mysql/mysql-connector-j -->
+        <dependency>
+            <artifactId>mysql-connector-j</artifactId>
+            <groupId>com.mysql</groupId>
+            <version>8.2.0</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->
+        <dependency>
+            <artifactId>lombok</artifactId>
+            <groupId>org.projectlombok</groupId>
+            <scope>provided</scope>
+            <version>1.18.26</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.postgresql/postgresql -->
+        <dependency>
+            <groupId>org.postgresql</groupId>
+            <artifactId>postgresql</artifactId>
+            <version>42.6.0</version>
+        </dependency>
+
+    </dependencies>
+    <groupId>opencartshop</groupId>
+    <modelVersion>4.0.0</modelVersion>
+    <!-- FIXME change it to the project's website -->
+    <name>http://localhost/opencartshop/index.php</name>
+    <profiles>
+
+        <profile>
+            <build>
+                <pluginManagement><!-- lock down plugins versions to avoid using
+					Maven defaults (maybe moved to parent pom) -->
+                    <plugins>
+                        <plugin>
+                            <artifactId>maven-surefire-plugin</artifactId>
+                            <configuration>
+                                <suiteXmlFiles>
+                                    <suiteXmlFile>testSuites/regression.xml</suiteXmlFile>
+                                </suiteXmlFiles>
+                            </configuration>
+                            <groupId>org.apache.maven.plugins</groupId>
+                            <version>3.0.0-M7</version>
+                        </plugin>
+                    </plugins>
+                </pluginManagement>
+            </build>
+            <id>Regression</id>
+        </profile>
+
+        <profile>
+            <build>
+                <pluginManagement>
+                    <plugins>
+                        <plugin>
+                            <artifactId>maven-surefire-plugin</artifactId>
+                            <configuration>
+                                <suiteXmlFiles>
+                                    <suiteXmlFile>testSuites/login.xml</suiteXmlFile>
+                                </suiteXmlFiles>
+                            </configuration>
+                            <groupId>org.apache.maven.plugins</groupId>
+                            <version>3.0.0-M7</version>
+                        </plugin>
+                    </plugins>
+                </pluginManagement>
+            </build>
+            <id>login</id>
+        </profile>
+
+        <profile>
+            <build>
+                <pluginManagement>
+                    <plugins>
+                        <plugin>
+                            <artifactId>maven-surefire-plugin</artifactId>
+                            <configuration>
+                                <suiteXmlFiles>
+                                    <suiteXmlFile>testSuites/register.xml</suiteXmlFile>
+                                </suiteXmlFiles>
+                            </configuration>
+                            <groupId>org.apache.maven.plugins</groupId>
+                            <version>3.0.0-M7</version>
+                        </plugin>
+                    </plugins>
+                </pluginManagement>
+            </build>
+            <id>register</id>
+        </profile>
+        <profile>
+            <build>
+                <pluginManagement>
+                    <plugins>
+                        <plugin>
+                            <artifactId>maven-surefire-plugin</artifactId>
+                            <configuration>
+                                <suiteXmlFiles>
+                                    <suiteXmlFile>testSuites/loginAndregister.xml</suiteXmlFile>
+                                </suiteXmlFiles>
+                            </configuration>
+                            <groupId>org.apache.maven.plugins</groupId>
+                            <version>3.0.0-M7</version>
+                        </plugin>
+                    </plugins>
+                </pluginManagement>
+            </build>
+            <id>loginAndregister</id>
+        </profile>
+
+        <profile>
+            <build>
+                <pluginManagement>
+                    <plugins>
+                        <plugin>
+                            <artifactId>maven-surefire-plugin</artifactId>
+                            <configuration>
+                                <includes>
+                                    <include>**/TestNGTestRunner.java</include>
+                                </includes>
+                            </configuration>
+                            <groupId>org.apache.maven.plugins</groupId>
+                            <version>3.0.0-M7</version>
+                        </plugin>
+                    </plugins>
+                </pluginManagement>
+            </build>
+            <id>CucumberTests</id>
+        </profile>
+        <profile>
+            <build>
+                <pluginManagement>
+                    <plugins>
+                        <plugin>
+                            <artifactId>maven-surefire-plugin</artifactId>
+                            <configuration>
+                                <suiteXmlFiles>
+                                    <suiteXmlFile>
+                                        testSuites/workflow.xml
+                                    </suiteXmlFile>
+                                </suiteXmlFiles>
+                            </configuration>
+                            <groupId>org.apache.maven.plugins</groupId>
+                            <version>3.0.0-M7</version>
+                        </plugin>
+                    </plugins>
+                </pluginManagement>
+            </build>
+            <id>workflow</id>
+        </profile>
+    </profiles>
+    <build>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-surefire-plugin</artifactId>
+                    <version>3.2.3</version>
+                    <configuration>
+                        <suiteXmlFiles>
+                            <suiteXmlFile>testSuites/register.xml</suiteXmlFile>
+                        </suiteXmlFiles>
+                    </configuration>
+                </plugin>
+
+                <plugin>
+                    <artifactId>maven-clean-plugin</artifactId>
+                    <version>3.3.2</version>
+                </plugin>
+                <plugin>
+                    <artifactId>maven-resources-plugin</artifactId>
+                    <version>3.3.1</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-compiler-plugin</artifactId>
+                    <version>3.12.0</version>
+                </plugin>
+                <plugin>
+                    <artifactId>maven-jar-plugin</artifactId>
+                    <version>3.0.2</version>
+                </plugin>
+                <plugin>
+                    <artifactId>maven-install-plugin</artifactId>
+                    <version>3.1.1</version>
+                </plugin>
+                <plugin>
+                    <artifactId>maven-deploy-plugin</artifactId>
+                    <version>3.1.1</version>
+                </plugin>
+                <plugin>
+                    <artifactId>maven-site-plugin</artifactId>
+                    <version>4.0.0-M13</version>
+                </plugin>
+                <plugin>
+                    <artifactId>maven-project-info-reports-plugin</artifactId>
+                    <version>3.0.0</version>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+    </build>
+    <properties>
+        <candidateuitesting.url>https://test.beta.beta.xxx.uk.uk</candidateuitesting.url>
+        <database.dburl>
+            jdbc:postgresql://dps-tst-hec-beta.xxx.uk-dat00.cug8xuagehzu.eu-west-2.rds.amazonaws.com:5432/
+        </database.dburl>
+        <database.password>76f243daf5f328474470</database.password>
+
+        <database.username>liquibase_user</database.username>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
+        <microservicebase.uri>https://test.beta.xxx.uk/</microservicebase.uri>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <uitesting.url>https://test.beta.xxx.uk</uitesting.url>
+    </properties>
+    <url>https://localhost/opencartshop</url>
+
+    <version>0.0.1-SNAPSHOT</version>
+</project>

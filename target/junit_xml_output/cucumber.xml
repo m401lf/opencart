@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="64.914" tests="2" skipped="0" failures="0" errors="0">
+<testcase classname="Login Page - Login Functionality" name="should be able to login with valid credentials - Example #1.1" time="45.626">
+<system-out><![CDATA[
+Given I landed on an e-commerce page........................................passed
+And navigate to Login page..................................................passed
+And I can see "New Customer" and "Returning Customer" sub headings texts....passed
+And "Register Account" sub header is displayed..............................passed
+And I can see aside widget labels count as "13" first label "Login" and last "Newsletter".passed
+And I login in login page as a returning customer...........................passed
+And I click on Login button.................................................passed
+Then should be presented with the following validation message as "My Account".passed
+And I tap on Your Edit Account Information link in aside widget.............passed
+And Updated account information excluding email with the following details below:.passed
+And click edit account Continue button......................................passed
+And I should see confirmation message "Success: Your account has been successfully updated.".passed
+When I clicks on Logout link in aside Widget................................passed
+And "Account Logout" text is displayed......................................passed
+And I tap logout Continue Button............................................passed
+And back to index page title as "Your Store"................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login Page - Login Functionality" name="should not be able to login with invalid credentials - Example #1.1" time="15.523">
+<system-out><![CDATA[
+Given I landed on an e-commerce page........................................passed
+And navigate to Login page..................................................passed
+And I can see "New Customer" and "Returning Customer" sub headings texts....passed
+And "Register Account" sub header is displayed..............................passed
+And I can see aside widget labels count as "13" first label "Login" and last "Newsletter".passed
+And I login in login page as a returning customer...........................passed
+And I click on Login button.................................................passed
+Then should be presented with the following Error validation message as "Warning:".passed
+And back to login page title as "Account Login".............................passed
+]]></system-out>
+</testcase>
+</testsuite>
